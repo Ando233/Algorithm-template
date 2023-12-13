@@ -15,3 +15,17 @@ int idx = lower_bound(a, a + n, x) - a;
 int idx = lower_bound(a.begin(), a.end(), x, greater<int>()) 
 ```
 
+## bitset
+
+```
+bitset<N> s;
+count() 返回有多少个1
+any() 判断是否至少有一个1
+none() 判断是否全为0
+set() 所有位置成1
+set(k, v) 第k位置成v
+reset() 所有位置成0
+flip() 取反
+flip(k) 第k位
+```
+
