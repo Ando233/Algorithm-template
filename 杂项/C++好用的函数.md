@@ -73,7 +73,9 @@ reverse(s.begin(), s.end());
 iota(a + 1, a + n + 1, 10) // 10, 11, 12, ......
 ```
 
-## string
+## STL
+
+### string
 
 ```
 string substr(int pos, int n = npos)  pos开始的n个字符组成的子串
@@ -82,7 +84,7 @@ char *c_str() 返回c字符串的指针，内容与string相同
 s += c;	string后加char/string
 ```
 
-## bitset
+### bitset
 
 ```
 bitset<N> s;
@@ -94,6 +96,15 @@ set(k, v) 第k位置成v
 reset() 所有位置成0
 flip() 取反
 flip(k) 第k位
+```
+
+### priority_queue
+
+```
+push() 插入
+top() 堆顶
+pop() 弹出堆顶
+小根堆：priority_queue<int, vector<int>, greater<int> > q;
 ```
 
 ## INT_MAX INT_MIN
